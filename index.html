@@ -7,14 +7,14 @@
 <meta name="description" content="Cameron Morris — Mechanical Engineer at OMG Roofing Products. Portfolio, experience, education, and projects.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <header class="site-header">
   <nav class="nav container">
-    <a href="#top" class="logo">CM<span class="logo-dot"></span></a>
+    <a href="#top" class="logo">Cameron Morris</a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -31,76 +31,99 @@
 
 <main>
   <section class="hero" id="top">
-    <div class="container hero-inner">
-      <p class="eyebrow eyebrow-light">Mechanical Engineer</p>
-      <h1>CAMERON<br>MORRIS</h1>
-      <p class="hero-title">Roofing NPDI Engineer <span class="hero-title-at">at</span> OMG Roofing Products</p>
-      <p class="hero-location">Springfield / Agawam, Massachusetts</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Get in Touch <span aria-hidden="true">&rarr;</span></a>
-        <a href="https://www.linkedin.com/in/cameron-morris-066" target="_blank" rel="noopener" class="btn btn-outline">View LinkedIn</a>
+    <div class="container hero-grid">
+      <div class="hero-main">
+        <p class="hero-hello">Hello, I'm</p>
+        <h1 class="hero-name">CAMERON<br>MORRIS</h1>
+        <p class="hero-title">Roofing NPDI Engineer <span class="hero-title-at">at</span> OMG Roofing Products</p>
+        <p class="hero-location">Springfield / Agawam, Massachusetts</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in Touch <span aria-hidden="true">&rarr;</span></a>
+          <a href="https://www.linkedin.com/in/cameron-morris-066" target="_blank" rel="noopener" class="btn btn-outline">View LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-tags">
+        <ul>
+          <li>#MechanicalDesign</li>
+          <li class="hero-tag-active">#Robotics</li>
+          <li>#MachineVision</li>
+          <li>#Mechatronics</li>
+          <li>#DOE</li>
+          <li>#NPD</li>
+        </ul>
+        <blockquote class="hero-quote">"I like understanding how things actually work — whether that's an aircraft, a camera, or a roofing fastener."</blockquote>
       </div>
     </div>
   </section>
 
   <section class="section" id="about">
     <div class="container">
-      <p class="eyebrow">01 &mdash; About Me</p>
+      <p class="eyebrow">About Me</p>
       <h2 class="section-title">Who I Am</h2>
       <div class="about-grid">
-        <p class="about-text">
-          I'm a mechanical engineer who has spent my career at the intersection of design, data, and hands-on problem solving.
-          I started at OMG Roofing Products as an R&amp;D intern back in 2021, came back full-time as an R&amp;D Engineer
-          after finishing my Master's in Mechatronics, and now work as a New Product Development Engineer, building the
-          fasteners and systems that hold roofs together. Along the way I picked up a love of teaching too — in 2025 I
-          spent a semester as adjunct faculty at Western New England University, running the Machine Vision and SPC lab
-          for junior engineering students, and in 2022 I presented a paper on low-cost autonomous mobile robots at the
-          ASME IMECE conference.
-        </p>
-        <p class="about-text">
-          Outside of work, I'm usually behind a camera, on a pair of skis, or designing something small enough to
-          3D print on my desk. I held a private pilot license from 2021 to 2025, which fed the same curiosity that
-          got me into engineering in the first place — I like understanding how things actually work, whether that's
-          an aircraft, a camera, or a roofing fastener.
-        </p>
+        <div class="about-text-col">
+          <p class="about-text">
+            I'm a mechanical engineer who has spent my career at the intersection of design, data, and hands-on problem solving.
+            I started at OMG Roofing Products as an R&amp;D intern back in 2021, came back full-time as an R&amp;D Engineer
+            after finishing my Master's in Mechatronics, and now work as a New Product Development Engineer, building the
+            fasteners and systems that hold roofs together. Along the way I picked up a love of teaching too — in 2025 I
+            spent a semester as adjunct faculty at Western New England University, running the Machine Vision and SPC lab
+            for junior engineering students, and in 2022 I presented a paper on low-cost autonomous mobile robots at the
+            ASME IMECE conference.
+          </p>
+          <p class="about-text">
+            Outside of work, I'm usually behind a camera, on a pair of skis, or designing something small enough to
+            3D print on my desk. I held a private pilot license from 2021 to 2025, which fed the same curiosity that
+            got me into engineering in the first place.
+          </p>
+        </div>
+        <ul class="check-list">
+          <li><span class="check-dot"></span>Product Development Engineering</li>
+          <li class="check-list-active"><span class="check-dot"></span>Robotics &amp; Automation</li>
+          <li><span class="check-dot"></span>Machine Vision &amp; ML</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section class="section section-dark" id="experience">
+  <section class="section" id="experience">
     <div class="container">
-      <p class="eyebrow eyebrow-light">02 &mdash; Career</p>
-      <h2 class="section-title section-title-light">Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-index">01</div>
-          <div class="timeline-content">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">My Career</p>
+          <h2 class="section-title">Where I've Worked</h2>
+        </div>
+      </div>
+      <div class="list">
+        <div class="list-item">
+          <span class="list-index">01</span>
+          <div class="list-body">
             <h3>Roofing NPDI Engineer</h3>
-            <p class="timeline-meta">OMG Roofing Products · Oct 2024 – Present · Agawam, MA</p>
+            <p class="list-meta">OMG Roofing Products · Oct 2024 – Present · Agawam, MA</p>
             <p>Leading new product development and introduction for roofing fastener systems, working across design, testing, and manufacturing to bring new products to market.</p>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-index">02</div>
-          <div class="timeline-content">
+        <div class="list-item">
+          <span class="list-index">02</span>
+          <div class="list-body">
             <h3>Research and Development Engineer</h3>
-            <p class="timeline-meta">OMG Roofing Products · Jun 2022 – Oct 2024 · Agawam, MA</p>
+            <p class="list-meta">OMG Roofing Products · Jun 2022 – Oct 2024 · Agawam, MA</p>
             <p>Research and development engineering with a focus on robotics and mechatronic systems, using design of experiments to guide product and process improvements.</p>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-index">03</div>
-          <div class="timeline-content">
+        <div class="list-item">
+          <span class="list-index">03</span>
+          <div class="list-body">
             <h3>Adjunct Faculty</h3>
-            <p class="timeline-meta">Western New England University · Aug 2025 – Dec 2025 · Massachusetts</p>
+            <p class="list-meta">Western New England University · Aug 2025 – Dec 2025 · Massachusetts</p>
             <p>Presented and instructed a Machine Vision and Statistical Process Control lab for junior-level engineering students, covering machine vision system setup, data acquisition, and SPC-based quality decisions.</p>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-index">04</div>
-          <div class="timeline-content">
+        <div class="list-item">
+          <span class="list-index">04</span>
+          <div class="list-body">
             <h3>Research and Development Engineer Intern</h3>
-            <p class="timeline-meta">OMG Roofing Products · Jun 2021 – Aug 2021 · Agawam, MA</p>
+            <p class="list-meta">OMG Roofing Products · Jun 2021 – Aug 2021 · Agawam, MA</p>
             <p>Worked alongside engineers using design of experiments to build test series, acquiring and analyzing data to drive informed changes to products and processes.</p>
           </div>
         </div>
@@ -110,8 +133,8 @@
 
   <section class="section" id="education">
     <div class="container">
-      <p class="eyebrow">03 &mdash; Education</p>
-      <h2 class="section-title">Education</h2>
+      <p class="eyebrow">Education</p>
+      <h2 class="section-title">Academic Background</h2>
       <div class="cards">
         <div class="card">
           <h3>M.S. Mechanical Engineering</h3>
@@ -146,14 +169,14 @@
     </div>
   </section>
 
-  <section class="section section-dark" id="skills">
+  <section class="section" id="skills">
     <div class="container">
-      <p class="eyebrow eyebrow-light">04 &mdash; Toolkit</p>
-      <h2 class="section-title section-title-light">Skills</h2>
+      <p class="eyebrow">Toolkit</p>
+      <h2 class="section-title">Skills</h2>
       <div class="skills-grid">
         <div class="skill-group">
           <h3>Design &amp; CAD</h3>
-          <ul class="pill-list pill-list-dark">
+          <ul class="pill-list">
             <li>SolidWorks</li>
             <li>Autodesk Inventor</li>
             <li>Siemens NX</li>
@@ -161,7 +184,7 @@
         </div>
         <div class="skill-group">
           <h3>Programming &amp; Controls</h3>
-          <ul class="pill-list pill-list-dark">
+          <ul class="pill-list">
             <li>MATLAB</li>
             <li>LabVIEW</li>
             <li>Visual Basic</li>
@@ -171,7 +194,7 @@
         </div>
         <div class="skill-group">
           <h3>Data &amp; Quality</h3>
-          <ul class="pill-list pill-list-dark">
+          <ul class="pill-list">
             <li>Minitab</li>
             <li>Statistical Process Control</li>
             <li>Machine Vision</li>
@@ -181,7 +204,7 @@
         </div>
         <div class="skill-group">
           <h3>Office &amp; Tools</h3>
-          <ul class="pill-list pill-list-dark">
+          <ul class="pill-list">
             <li>Word</li>
             <li>Excel</li>
             <li>PowerPoint</li>
@@ -193,57 +216,81 @@
 
   <section class="section" id="projects">
     <div class="container">
-      <p class="eyebrow">05 &mdash; Projects</p>
-      <h2 class="section-title">Projects</h2>
-      <div class="cards">
-        <div class="card">
+      <p class="eyebrow">My Projects</p>
+      <h2 class="section-title">Featured Work</h2>
+    </div>
+    <div class="project-rows">
+      <div class="project-row">
+        <div class="container project-row-inner">
+          <p class="project-label">Product Development</p>
           <h3>RhinoMark Plate Marking System</h3>
-          <p class="card-meta">OMG Roofing Products</p>
+          <p class="project-meta">OMG Roofing Products</p>
           <p>Developed and launched a plate-marking tool that helps roofers quickly locate and mark RhinoBond plates beneath the membrane. Magnetic guides center the tool over each plate and prevent marking unless it's properly aligned, cutting down on rework, protecting the roof, and keeping the finished surface clean.</p>
         </div>
-        <div class="card">
+      </div>
+      <div class="project-row project-row-accent">
+        <div class="container project-row-inner">
+          <p class="project-label">Robotics</p>
           <h3>Robotics &amp; Construction Automation</h3>
-          <p class="card-meta">OMG Roofing Products</p>
+          <p class="project-meta">OMG Roofing Products</p>
           <p>Helped adapt an existing commercial roofing installation tool into an autonomous mobile robot (AMR). Tested GPS position accuracy and its limitations on large AMRs, along with basic obstacle detection.</p>
         </div>
-        <div class="card">
+      </div>
+      <div class="project-row">
+        <div class="container project-row-inner">
+          <p class="project-label">Machine Learning</p>
           <h3>AI-Based Machine Condition Monitoring System</h3>
-          <p class="card-meta">ASME IMECE 2024 Conference Paper · with Dr. Vedang Chauhan &amp; Sunny Panchal</p>
+          <p class="project-meta">ASME IMECE 2024 Conference Paper · with Dr. Vedang Chauhan &amp; Sunny Panchal</p>
           <p>Built a condition-monitoring system for vibratory bowl feeders, combining Cognex machine vision (edge learning for jam and clog detection) with machine learning models — Random Forest, Gradient Boosting, SVM, and MLP — trained on sensor data from a custom test rig. Used Design of Experiments to capture data across a wide range of operating conditions, and found frequency-domain vibration data pushed SVM and GBDT models past 95% F1-score, far outperforming time-domain data.</p>
         </div>
-        <div class="card">
+      </div>
+      <div class="project-row project-row-accent">
+        <div class="container project-row-inner">
+          <p class="project-label">Robotics</p>
           <h3>Low-Cost Autonomous Mobile Robot for Outdoor Applications</h3>
-          <p class="card-meta">ASME IMECE 2022 Conference Paper</p>
+          <p class="project-meta">ASME IMECE 2022 Conference Paper</p>
           <p>Presented research on the design of a low-cost autonomous mobile robot for outdoor applications, advised by Dr. Vedang Chauhan.</p>
         </div>
-        <div class="card">
+      </div>
+      <div class="project-row">
+        <div class="container project-row-inner">
+          <p class="project-label">Design of Experiments</p>
           <h3>Drill Point Optimization</h3>
-          <p class="card-meta">OMG Inc. · Summer 2021</p>
+          <p class="project-meta">OMG Inc. · Summer 2021</p>
           <p>Created samples of three pointing dies for roofing screws to assess geometric trends for faster drill times under different loads and speeds. Redesigned point dies in SolidWorks and ran daily drill tests to improve fastener point quality.</p>
         </div>
-        <div class="card">
+      </div>
+      <div class="project-row project-row-accent">
+        <div class="container project-row-inner">
+          <p class="project-label">Data Analysis</p>
           <h3>VeganBerrie Data and Monetary Analysis</h3>
-          <p class="card-meta">Western New England University · Spring 2021</p>
+          <p class="project-meta">Western New England University · Spring 2021</p>
           <p>Analyzed trends in berry yield against location, treatment, and farm operations. Built a 52-week cost model that proposed a farm layout decreasing maintenance costs by 12%.</p>
         </div>
-        <div class="card">
+      </div>
+      <div class="project-row">
+        <div class="container project-row-inner">
+          <p class="project-label">Materials Research</p>
           <h3>Inconel 718/625 Research Project</h3>
-          <p class="card-meta">Western New England University · Fall 2020</p>
+          <p class="project-meta">Western New England University · Fall 2020</p>
           <p>Researched Inconel 718 and 625 alloys used in combustion chambers, turbine fan blades, and afterburners, studying how point defects affect atomic structure, strength, and heat tolerance.</p>
         </div>
-        <div class="card">
+      </div>
+      <div class="project-row project-row-accent">
+        <div class="container project-row-inner">
+          <p class="project-label">Embedded Systems</p>
           <h3>No Mess Mat Smart Device</h3>
-          <p class="card-meta">Western New England University · Spring 2019</p>
+          <p class="project-meta">Western New England University · Spring 2019</p>
           <p>Built a prototype pressure-plate mat that alerts an owner when their pet needs to go outside. Designed and 3D-printed parts in SolidWorks, then programmed load-cell tracking and phone alerts with Arduino.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section-dark" id="beyond">
+  <section class="section" id="beyond">
     <div class="container">
-      <p class="eyebrow eyebrow-light">06 &mdash; Beyond the Bench</p>
-      <h2 class="section-title section-title-light">Beyond the Bench</h2>
+      <p class="eyebrow">Beyond the Bench</p>
+      <h2 class="section-title">What I'm Into</h2>
       <div class="interests-grid">
         <div class="interest">
           <span class="interest-icon" aria-hidden="true">📷</span>
@@ -268,8 +315,8 @@
 
   <section class="section contact-section" id="contact">
     <div class="container contact-inner">
-      <p class="eyebrow eyebrow-ink">Get in Touch</p>
-      <h2 class="section-title contact-title">Let's Talk</h2>
+      <p class="eyebrow eyebrow-on-accent">Get in Touch</p>
+      <h2 class="section-title">Let's Talk</h2>
       <p class="about-text contact-text">I'm always happy to connect with other engineers or talk about a project. Reach out any time.</p>
       <div class="contact-links">
         <a href="mailto:cameron.morris066@gmail.com" class="btn btn-ink">cameron.morris066@gmail.com</a>
