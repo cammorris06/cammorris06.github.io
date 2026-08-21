@@ -169,30 +169,31 @@ a { color: var(--color-accent-text); }
   flex-wrap: wrap;
 }
 
-.hero-tags ul {
-  list-style: none;
-  margin: 0 0 28px;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px 20px;
+.hero-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.hero-tags li {
-  color: var(--color-text-muted);
-  font-weight: 600;
-  font-size: 0.92rem;
-}
-
-.hero-tag-active { color: var(--color-text); }
-
-.hero-quote {
-  margin: 0;
+.hero-info-block {
   padding: 20px 0 0;
   border-top: 1px solid var(--color-border);
-  font-style: italic;
-  color: var(--color-text-muted);
-  font-size: 0.95rem;
+}
+
+.hero-info-label {
+  margin: 0 0 8px;
+  color: var(--color-accent-text);
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hero-info-value {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.98rem;
+  line-height: 1.5;
 }
 
 .btn {
@@ -325,7 +326,7 @@ a { color: var(--color-accent-text); }
 
 .list-item {
   display: grid;
-  grid-template-columns: 56px 1fr;
+  grid-template-columns: 120px 1fr;
   gap: 20px;
   padding: 28px 0;
   border-top: 1px solid var(--color-border);
@@ -338,6 +339,7 @@ a { color: var(--color-accent-text); }
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--color-accent-text);
+  white-space: nowrap;
 }
 
 .list-body h3 {
@@ -358,6 +360,32 @@ a { color: var(--color-accent-text); }
   margin: 0;
   color: var(--color-text-muted);
   max-width: 640px;
+}
+
+.job-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.job-tag {
+  display: inline-block;
+  background: var(--color-accent-tint);
+  color: var(--color-accent-text);
+  border: 1px solid rgba(179, 33, 31, 0.35);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.job-tag:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
 }
 
 /* Cards */
@@ -452,11 +480,13 @@ a { color: var(--color-accent-text); }
 .project-row {
   padding: 44px 0;
   border-bottom: 1px solid var(--color-border);
+  scroll-margin-top: 84px;
 }
 
 .project-row-accent {
-  background: var(--color-accent);
-  border-bottom-color: var(--color-accent);
+  background:
+    radial-gradient(700px 320px at 20% 30%, rgba(179, 33, 31, 0.28), transparent 70%),
+    var(--color-bg-panel);
 }
 
 .project-label {
@@ -489,12 +519,6 @@ a { color: var(--color-accent-text); }
   color: var(--color-text-muted);
   max-width: 720px;
 }
-
-.project-row-accent .project-label,
-.project-row-accent .project-meta { color: rgba(0, 0, 0, 0.55); }
-
-.project-row-accent h3,
-.project-row-accent p:last-child { color: #fff; }
 
 /* Interests */
 .interests-grid {
@@ -589,5 +613,5 @@ a { color: var(--color-accent-text); }
 
   .section { padding: 64px 0; }
 
-  .list-item { grid-template-columns: 40px 1fr; }
+  .list-item { grid-template-columns: 1fr; gap: 6px; }
 }
